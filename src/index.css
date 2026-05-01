@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+
+:root {
+  --main-text: oklch(0.90 0.01 260);        /* #E5E7EB */
+  --muted-text: oklch(0.8 0.01 260);       /* #9CA3AF */
+  --accent-text: oklch(0.66 0.15 260);      /* #818CF8 */
+  --hover: oklch(0.4 0.18 265);             
+  --primary-color:  oklch(0.50 0.18 258);   
+  --highlight: oklch(0.66 0.15 260);        /* #818CF8 */
+  --alt: oklch(0.28 0.06 250);              /* #1F2937 */
+  --body-color: oklch(0.20 0.04 250);       /* #111827 */
+  --secondary-color: oklch(0.63 0.25 285);  /* #A78BFA */
+}
+
+.light {
+    --main-text: oklch(0.10 0.01 261);       /* #111827 */
+    --muted-text:  oklch(0.50 0.01 250);     /* #6B7280 */
+    --accent-text: oklch(0.35 0.24 266);     /* muted purple (#4F46E5) */
+    --hover: oklch(0.29 0.17 253);           /* deep indigo (#1E3A8A) */
+    --primary-color: oklch(0.45 0.18 252);   /* #5C6AC4 */
+    --highlight: oklch(0.34 0.19 246);       /* subdued blue (#2563EB) */
+    --alt: oklch(0.94 0.01 250);             /* #F0F5FF */
+    --body-color: oklch(1 0 0);              /* #FFFFFF */
+    --secondary-color: oklch(0.4 0.25 269); /* #A78BFA */
+}
+
+
+body {
+  color: var(--main-text);
+  background-color: var(--body-color);
+}
+
+@theme {
+
+  --color-main-text: var(--main-text);
+  --color-muted-text: var(--muted-text);
+  --color-accent-text: var(--accent-text);
+  --color-hover: var(--hover);
+  --color-primary-color: var(--primary-color);
+  --color-highlight: var(--highlight);
+  --color-alt: var(--alt);
+  --color-body-color: var(--body-color);
+  --color-secondary-color: var(--secondary-color);
+ 
+
+  /* Define keyframes like regular CSS, but inside @theme */
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  --animate-blink: blink 1s infinite;
+}
+
+
+
+
+
+
+
+
