@@ -4,6 +4,14 @@ A modern SaaS-style frontend application built using React and Tailwind CSS that
 
 ---
 
+## Project Status
+
+🚧 Deployment: Deployed  
+🌐 [Live Demo](https://saas-ai-site.vercel.app/)
+
+
+---
+
 ## ✨ Features
 
 - Modern SaaS landing page UI
